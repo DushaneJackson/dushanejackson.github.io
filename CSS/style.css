@@ -23,12 +23,18 @@ footer {
     padding: .3% .5%;
     color: white;
     font-size: 1.4rem;
+    transition: .2s;
+}
+
+.headericonmain:hover {
+    color: #112d4e;
 }
 
 .headericons {
     text-align: center;
     background-color: #3f72af;
 }
+
 
 .navname {
     font-family: 'reenie beanie';
@@ -123,6 +129,8 @@ footer {
     width: 70%;
     border-radius: 50%;
     margin-top: 50px;
+    position: relative;
+    top: 3rem;
 }
 
 .resumebtn {
@@ -143,6 +151,7 @@ footer {
 .sectiontitle {
     font-family: 'thasadith';
     font-weight: 700;
+    
     /* color: #112d4e; */
 }
 
@@ -199,6 +208,36 @@ footer {
     box-shadow: .5px .5px 3px #112d4e;
 }
 
+
+
+.modal-dialog,
+.modal-content {
+    /* 80% of window height */
+    height: 90%;
+    width: 3000%;
+    margin: 0 15rem;
+    
+}
+
+.modal-body {
+    /* 100% = dialog height, 120px = header + footer */
+    /* max-height: calc(1000% - 120px); */
+    max-width: 3000%;
+    overflow-y: scroll;
+    
+}
+
+.modal {
+    margin: 0 auto;
+}
+
+video {
+    width: 700px;
+    height: 700px;
+}
+
+
+
 .contacticons {
     font-size: 2rem;
     padding: 5% 1% 4%;
@@ -221,13 +260,67 @@ footer {
     text-align: center;
 }
 
+@media screen and (max-width: 1024px) {
+
+    .modal-dialog,
+    .modal-content {
+        /* 80% of window height */
+        height: 90%;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    video {
+        width: 400px;
+        height: 500px;
+
+    }
+}
 
 @media screen and (max-width: 991px) {
     .aboutmepic {
         position: relative;
         left: 14%;
+        top: 0;
+    }
+
+    .col {
+        padding: 0;
+
+    }
+
+    .work-btns {
+        margin: 6% 0;
+    }
+
+    .modal-dialog,
+    .modal-content {
+        /* 80% of window height */
+        height: 90%;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    video {
+        width: 400px;
+        height: 500px;
+
+    }
+
+}
+
+@media screen and (max-width: 812px) {
+    video {
+        width: 300px;
+    }
+    .modal-content {
+        height: 70%;
     }
 }
+
+
+
+/*  */
 
 
 /* ALL IDs */
@@ -250,7 +343,6 @@ footer {
 #aboutme {
     padding: 0 15% 7% 15%;
     background-color: #3f72af;
-    /* change to background image */
 }
 
 #skills {
