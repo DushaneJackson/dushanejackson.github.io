@@ -151,7 +151,7 @@ footer {
 .sectiontitle {
     font-family: 'thasadith';
     font-weight: 700;
-    
+
     /* color: #112d4e; */
 }
 
@@ -206,6 +206,11 @@ footer {
 .work-btns {
     margin: 0 3%;
     box-shadow: .5px .5px 3px #112d4e;
+    transition: .3s ease-out;
+}
+
+.work-btns:hover {
+    letter-spacing: 1px;
 }
 
 
@@ -216,7 +221,7 @@ footer {
     height: 90%;
     width: 3000%;
     margin: 0 15rem;
-    
+
 }
 
 .modal-body {
@@ -224,7 +229,7 @@ footer {
     /* max-height: calc(1000% - 120px); */
     max-width: 3000%;
     overflow-y: scroll;
-    
+
 }
 
 .modal {
@@ -260,6 +265,13 @@ video {
     text-align: center;
 }
 
+@media screen and (max-width: 1108px) {
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+}
+
 @media screen and (max-width: 1024px) {
 
     .modal-dialog,
@@ -270,17 +282,27 @@ video {
         margin: 0 auto;
     }
 
-    video {
-        width: 400px;
-        height: 500px;
+    .nav-link {
+        font-size: 1rem;
 
     }
+
+    .aboutmepic {
+        width: 90%;
+
+    }
+
+    .work-btns {
+        margin-top: 15px;
+    }
+
+
 }
 
 @media screen and (max-width: 991px) {
     .aboutmepic {
         position: relative;
-        left: 14%;
+        left: 5%;
         top: 0;
     }
 
@@ -289,9 +311,9 @@ video {
 
     }
 
-    .work-btns {
+    /* .work-btns {
         margin: 6% 0;
-    }
+    } */
 
     .modal-dialog,
     .modal-content {
@@ -301,23 +323,32 @@ video {
         margin: 0 auto;
     }
 
-    video {
-        width: 400px;
-        height: 500px;
-
+    .navname {
+        font-size: 1.8rem;
     }
+
+
 
 }
 
 @media screen and (max-width: 812px) {
-    video {
-        width: 300px;
-    }
+
     .modal-content {
         height: 70%;
     }
 }
 
+@media screen and (max-width: 320px) {
+
+    .modal-content {
+        height: 70%;
+    }
+
+    .navname {
+        font-size: 1.4rem;
+
+    }
+}
 
 
 /*  */
