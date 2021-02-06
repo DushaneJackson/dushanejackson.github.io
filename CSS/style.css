@@ -135,6 +135,11 @@ footer {
 
 .resumebtn {
     text-align: center;
+    transition: .3s ease-out;
+}
+
+.resumebtn:hover {
+    letter-spacing: 1px;
 }
 
 .btn-default {
