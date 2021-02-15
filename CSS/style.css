@@ -21,18 +21,18 @@ footer {
 
 .headericonmain {
     padding: .3% .5%;
-    color: white;
+    color: #112d4e;
     font-size: 1.4rem;
     transition: .2s;
 }
 
 .headericonmain:hover {
-    color: #112d4e;
+    color: #3f72af;
 }
 
 .headericons {
     text-align: center;
-    background-color: #3f72af;
+    background-color: #dbe2ef;
 }
 
 
@@ -112,9 +112,10 @@ footer {
 }
 
 
+
 .aboutmetitle {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 70px;
     color: white;
 }
 
@@ -124,10 +125,27 @@ footer {
     color: white;
 }
 
+.aboutme_characteristics {
+    font-size: 1.2rem;
+    font-style: italic;
+    text-transform: uppercase;
+    
+}
+
+.aboutme_maintext {
+    line-height: 30px;
+}
+
+.aboutme_subtext {
+    font-size: 1.1rem;
+}
+
 
 .aboutmepic {
     width: 70%;
     border-radius: 50%;
+    border: 2px solid #fff;
+    border-style: solid;
     margin-top: 50px;
     position: relative;
     top: 3rem;
@@ -222,7 +240,7 @@ footer {
 
 .modal-dialog,
 .modal-content {
-    /* 80% of window height */
+    
     height: 90%;
     width: 3000%;
     margin: 0 15rem;
@@ -230,8 +248,7 @@ footer {
 }
 
 .modal-body {
-    /* 100% = dialog height, 120px = header + footer */
-    /* max-height: calc(1000% - 120px); */
+    
     max-width: 3000%;
     overflow-y: scroll;
 
@@ -241,15 +258,11 @@ footer {
     margin: 0 auto;
 }
 
-video {
-    width: 700px;
-    height: 700px;
-}
 
 
 
 .contacticons {
-    font-size: 2rem;
+    font-size: 2.3rem;
     padding: 5% 1% 4%;
     margin-top: 40px;
     color: #112d4e;
@@ -262,13 +275,76 @@ video {
 
 .contacttext {
     font-size: .8rem;
+    margin-top: 15px;
 }
 
 .footercontent {
-    background-color: #dbe2ef;
+    background-color: #3f72af;
     width: 100%;
     text-align: center;
+    color: #dbe2ef;
+    
 }
+
+
+/* ALL IDs */
+
+#navigate {
+    padding: .5% 3%;
+    background-color: #3f72af;
+    color: #112d4e;
+    font-size: 1.5rem;
+}
+
+#namepage {
+    padding: 7% 15%;
+    text-align: center;
+    background-image: url(/images/backgroundimg.jpg);
+    background-size: 100% 600px;
+
+}
+
+#aboutme {
+    padding: 0 15% 7% 15%;
+    background-color: #3f72af;
+}
+
+#skills {
+    padding: 7% 15% 7% 15%;
+    background-color: #dbe2ef;
+    text-align: center;
+}
+
+#mywork {
+    padding: 7% 15% 7% 15%;
+    background-color: #3f72af;
+    text-align: center
+}
+
+#contactme {
+    padding: 4% 15% 4% 15%;
+    background-color: #dbe2ef;
+    text-align: center
+}
+
+@media screen and (min-width: 1681px) {
+    #namepage {
+        background-size: 100% 100%;
+    }
+
+    .aboutmetitle {
+        margin-top: 25%;
+    }
+
+    .aboutmepic {
+        margin-top: 15%;
+    }
+    
+    .aboutme_maintext {
+        font-size: 1.2rem;
+    }
+}
+
 
 @media screen and (max-width: 1108px) {
 
@@ -316,9 +392,7 @@ video {
 
     }
 
-    /* .work-btns {
-        margin: 6% 0;
-    } */
+   
 
     .modal-dialog,
     .modal-content {
@@ -332,7 +406,11 @@ video {
         font-size: 1.8rem;
     }
 
+    .aboutme_maintext {
+        font-size: 1.1rem;
+    }
 
+    
 
 }
 
@@ -342,6 +420,23 @@ video {
         height: 70%;
     }
 }
+
+@media screen and (max-width: 775px) {
+    .aboutme_characteristics {
+        font-size: 1rem;
+
+    }
+    
+}
+
+@media screen and (max-width: 634px) {
+    .aboutme_characteristics {
+        font-size: 1rem;
+
+    }
+
+}
+
 
 @media screen and (max-width: 320px) {
 
@@ -356,45 +451,5 @@ video {
 }
 
 
-/*  */
 
 
-/* ALL IDs */
-
-#navigate {
-    padding: 7% 15%;
-    background-color: #3f72af;
-    color: #112d4e;
-    font-size: 1.5rem;
-}
-
-#namepage {
-    padding: 7% 15%;
-    text-align: center;
-    background-image: url(/images/backgroundimg.jpg);
-    background-size: 1700px 600px;
-
-}
-
-#aboutme {
-    padding: 0 15% 7% 15%;
-    background-color: #3f72af;
-}
-
-#skills {
-    padding: 7% 15% 7% 15%;
-    background-color: #dbe2ef;
-    text-align: center;
-}
-
-#mywork {
-    padding: 7% 15% 7% 15%;
-    background-color: #3f72af;
-    text-align: center
-}
-
-#contactme {
-    padding: 7% 15% 7% 15%;
-    background-color: #dbe2ef;
-    text-align: center
-}
